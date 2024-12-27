@@ -10,7 +10,7 @@ while start:
     if option.lower() == "a":
         program_list = ["Choose an Activity", 1 , 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
         choose = input(f"\n\t Please{program_list} that you want to view: ")
-
+ 
     elif option.lower() == "b":
         program_list2 = ["Choose a Code Challenge", 1 , 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
     elif option.lower() == "c":
@@ -21,6 +21,8 @@ while start:
     else:
         print("Please choose from the given.")
         continue
+
+
 # if choose == 1 or 2:
 #     print()
 # #print statements
