@@ -8,7 +8,7 @@ for a in range(-1,6):
         print("*", end=" ")
     for d in range(4, a, -1):
         print("*", end=" ")
-    
+      
     print()
 for f in range(-1, 6):
     for g in range(-1, 6):
