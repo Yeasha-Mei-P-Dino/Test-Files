@@ -1,0 +1,42 @@
+def show data():
+
+     from openpyxl import load workbook
+      wbload_workbook("userdata.xlsx")
+      WS wb["UserData"]
+      data window tk. Toplevel (window)
+      data window.title("STORED DATA")
+
+for i, row in enumerate(ws.iter rows (values only=True)):
+       for j, value in enumerate (row):
+
+        label tk. Label(data window, text value, borderwidth=1, relief "solid", padx=6, pady-3)
+       label.grid(row-i column=j.)
+
+
+def save_to_excel():
+
+       if not validate_inputs():
+               return
+      name = name_entry.get()
+     email email_entry.get()
+
+dob dob_entry.get():
+   
+     wbload_workbook("userdata.xlsx")
+    WS wb["UserData"]
+    ws.append([name, email, dob])
+    wb.save("userdata.xlsx")
+
+      messagebox.showinfo("Success", "Data saved to Excel!")
+     name_entry.delete(0, tk.END)
+     email_entry.delete(0, tk.END)
+    dob_entry.delete(0, tk. END)
+   tk. Button (window, text="Submit", command=save_to_excel).grid(row=3, column=2)
+
+def format_excel():
+
+    wbload_workbook("userdata.xlsx")
+     ws= wb["UserData"]
+
+      for cell in ws[1]:
+            cell.font Font(bold=True)
